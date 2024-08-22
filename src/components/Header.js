@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import logo from "../assests/logo.png";
 import { Link } from "react-router-dom";
 import { Search } from "./Search";
-import { DropdownLoggedOut, DropdownLoggedIn } from "./index";
+
 import { useCart } from "../context";
+import { DropdownLoggedOut, DropdownLoggedIn } from "./index";
 export function Header() {
   const { cartList } = useCart();
   const token = JSON.parse(sessionStorage.getItem("token"));
